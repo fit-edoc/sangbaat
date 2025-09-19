@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+form input{
+  height: 40px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+
+.main{
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+@font-face {
+  font-family: hero;
+  src: url('./assets/Pathagonia.ttf');
+}
+
+.chats{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
