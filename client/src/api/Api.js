@@ -1,4 +1,4 @@
-export const host = "https://sangbaat.onrender.com/"
+export const host = "https://sangbaat.onrender.com"
 
 export const registerRoute = `${host}/user/signup`
 export const loginRoute = `${host}/user/login`

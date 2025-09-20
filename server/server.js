@@ -15,7 +15,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-  origin:"https://sangbaat.vercel.app",
+  origin:["http://localhost:5173","https://sangbaat.vercel.app"],
   credentials:true,
 }
 ))
@@ -37,8 +37,10 @@ const server = app.listen(PORT,()=>{
 
 const io = socket(server, {
   cors: {
-    origin: "https://sangbaat.vercel.app",
+    origin: ["http://localhost:5173","https://sangbaat.vercel.app"],
     credentials: true,
+     methods: ["GET", "POST"],
+    
   },
 });
 
