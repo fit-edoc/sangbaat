@@ -62,7 +62,7 @@ const Contacts = ({contacts,changeChat}) => {
           <div className='text-center'><h1 className='text-white text-2xl'>Chats</h1></div>
           <div className='flex flex-row md:flex-col gap-2 mt-6 px-2'>
                 {contacts.map((item, index) => (
-              <div  className={`h-[50px]  w-[50px]    rounded-full flex cursor-pointer transition   md:w-[300px] md:mx-auto
+              <div  className={`h-[50px]  w-[50px]    rounded-full flex cursor-pointer transition   md:w-[360px] md:mx-auto
       ${index === currentSelected ? 'bg-black text-white' : 'bg-gray-300'}
     `} key={index} onClick={()=>changeCurrentChat(index,item)} >
                 <div className={`h-full w-full bg-[#ffe9b0] rounded-full overflow-hidden md:h-full md:w-[20%]  ${index === currentSelected ? "border-[1px] border-black" : ""}
