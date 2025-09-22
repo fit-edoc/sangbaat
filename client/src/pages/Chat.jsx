@@ -45,7 +45,7 @@ const Chat = () => {
   }, []);
 
  
- console.log("curret" ,currentChat)
+ 
 
 
   const handleChatChange = (item) => {
